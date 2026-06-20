@@ -1,0 +1,20 @@
+{
+  "name": "cloud-arch-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Model-driven platform to document hybrid cloud architectures (C4 + network diagrams)",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev:api": "npm run start:dev --workspace @cap/api",
+    "dev:web": "npm run dev --workspace @cap/web",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: cap
+      POSTGRES_PASSWORD: cap
+      POSTGRES_DB: cap
+    ports:
+      - "5432:5432"
+    volumes:
+      - cap_pgdata:/var/lib/postgresql/data
+
+volumes:
+  cap_pgdata:

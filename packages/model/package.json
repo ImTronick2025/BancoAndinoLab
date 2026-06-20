@@ -1,0 +1,14 @@
+{
+  "name": "@cap/model",
+  "version": "0.1.0",
+  "description": "Shared domain model for the cloud architecture platform (model-driven core)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
